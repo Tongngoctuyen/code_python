@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Quản lý bán hàng</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tabHang">
+       <attribute name="title">
+        <string>Mặt hàng</string>
+       </attribute>
+       <layout class="QVBoxLayout">
+        <item>
+         <widget class="QLineEdit" name="txtSearchHang">
+          <property name="placeholderText">
+           <string>Tìm kiếm...</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout">
+          <item>
+           <widget class="QLineEdit" name="txtTenHang">
+            <property name="placeholderText">
+             <string>Tên hàng</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="txtNguon">
+            <property name="placeholderText">
+             <string>Nguồn gốc</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="txtGia">
+            <property name="placeholderText">
+             <string>Giá</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="tblHang"/>
+        </item>
+        <item>
+         <layout class="QHBoxLayout">
+          <item>
+           <widget class="QPushButton" name="btnAddHang">
+            <property name="text">
+             <string>Thêm</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnEditHang">
+            <property name="text">
+             <string>Sửa</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnDelHang">
+            <property name="text">
+             <string>Xóa</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabKH">
+       <attribute name="title">
+        <string>Khách hàng</string>
+       </attribute>
+       <layout class="QVBoxLayout">
+        <item>
+         <widget class="QLineEdit" name="txtSearchKH">
+          <property name="placeholderText">
+           <string>Tìm khách hàng...</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout">
+          <item>
+           <widget class="QLineEdit" name="txtTenKH">
+            <property name="placeholderText">
+             <string>Tên khách</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="txtDiaChi">
+            <property name="placeholderText">
+             <string>Địa chỉ</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="txtSDT">
+            <property name="placeholderText">
+             <string>SĐT</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="tblKH"/>
+        </item>
+        <item>
+         <layout class="QHBoxLayout">
+          <item>
+           <widget class="QPushButton" name="btnAddKH">
+            <property name="text">
+             <string>Thêm</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnEditKH">
+            <property name="text">
+             <string>Sửa</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnDelKH">
+            <property name="text">
+             <string>Xóa</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabHD">
+       <attribute name="title">
+        <string>Hóa đơn</string>
+       </attribute>
+       <layout class="QVBoxLayout">
+        <item>
+         <widget class="QLineEdit" name="txtSearchHD">
+          <property name="placeholderText">
+           <string>Tìm hóa đơn...</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="tblHD"/>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="tblCT"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
